@@ -1,13 +1,117 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>digital-badges</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crachás Virtuais - Qualite Evidence</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .directory-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .directory-item {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+      transition: all 0.3s ease;
+    }
+
+    .directory-item:hover {
+      background: rgba(212, 175, 55, 0.1);
+      border-color: var(--gold-primary);
+      transform: translateX(5px);
+    }
+
+    .item-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+      border: 2px solid var(--gold-primary);
+    }
+
+    .item-info h3 {
+      font-size: 1.1rem;
+      color: var(--gold-primary);
+      margin-bottom: 2px;
+    }
+
+    .item-info p {
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="branding" style="margin-top: 20px; margin-bottom: 20px;">
+      <img src="assets/logo_light.png" alt="Qualite Evidence" style="height: 60px; opacity: 1;">
+      <h1 style="font-size: 1.5rem; margin-top: 10px; color: var(--text-main);">Crachás Virtuais</h1>
+    </header>
+
+    <main class="directory-list">
+      <a href="rubia.html" class="directory-item">
+        <img src="assets/rubia.png" alt="Rubia" class="item-avatar">
+        <div class="item-info">
+          <h3>Rubia de Oliveira</h3>
+          <p>Presidente</p>
+        </div>
+      </a>
+
+      <a href="samuel.html" class="directory-item">
+        <img src="assets/samuel.png" alt="Samuel" class="item-avatar">
+        <div class="item-info">
+          <h3>Samuel Torres</h3>
+          <p>Diretor Executivo</p>
+        </div>
+      </a>
+
+      <a href="rodney.html" class="directory-item">
+        <img src="assets/rodney.png" alt="Rodney" class="item-avatar">
+        <div class="item-info">
+          <h3>Rodney de Souza</h3>
+          <p>Head de Processos</p>
+        </div>
+      </a>
+
+      <a href="joao.html" class="directory-item">
+        <img src="assets/joao.png" alt="João" class="item-avatar">
+        <div class="item-info">
+          <h3>João Pedro</h3>
+          <p>Head de P&D</p>
+        </div>
+      </a>
+
+      <a href="bernardo.html" class="directory-item">
+        <img src="assets/bernardo.png" alt="Bernardo" class="item-avatar">
+        <div class="item-info">
+          <h3>Bernardo</h3>
+          <p>Closer</p>
+        </div>
+      </a>
+    </main>
+
+    <footer class="branding" style="margin-top: 40px;">
+      <p>QUALITE EVIDENCE</p>
+    </footer>
+  </div>
+</body>
+
 </html>
